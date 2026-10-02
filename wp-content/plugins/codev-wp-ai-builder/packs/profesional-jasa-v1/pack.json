@@ -1,0 +1,85 @@
+{
+  "pack": "profesional-jasa-v1",
+  "pack_version": 2,
+  "language": "id",
+  "intent": "jasa profesional / UMKM",
+  "theme": {
+    "stylesheet": "twentytwentyfive",
+    "switch": false
+  },
+  "design": {
+    "variation": "Twilight",
+    "astra": { "palette": "Oak" }
+  },
+  "template_parts": [
+    {
+      "slug": "header",
+      "title": "Header",
+      "area": "header",
+      "patterns": ["header-sederhana"]
+    },
+    {
+      "slug": "footer",
+      "title": "Footer",
+      "area": "footer",
+      "patterns": ["footer-tiga-kolom"]
+    }
+  ],
+  "templates": [
+    { "slug": "page-beranda", "title": "Beranda", "patterns": ["layout-halaman"] },
+    { "slug": "page-tentang-kami", "title": "Tentang Kami", "patterns": ["layout-halaman"] },
+    { "slug": "page-layanan", "title": "Layanan", "patterns": ["layout-halaman"] },
+    { "slug": "page-kontak", "title": "Kontak", "patterns": ["layout-halaman"] }
+  ],
+  "pages": [
+    {
+      "slug": "beranda",
+      "title": "Beranda",
+      "page_type": "homepage",
+      "sections": [
+        { "section": "hero", "zone": "above-fold", "patterns": ["hero-jasa"] },
+        { "section": "layanan-grid", "zone": "body", "patterns": ["layanan-grid"] },
+        { "section": "nilai-tiga-kolom", "zone": "body", "patterns": ["nilai-tiga-kolom"] },
+        { "section": "testimoni", "zone": "proof", "patterns": ["testimoni-kutipan"] },
+        { "section": "cta-kontak", "zone": "closing", "patterns": ["cta-kontak"] }
+      ]
+    },
+    {
+      "slug": "tentang-kami",
+      "title": "Tentang Kami",
+      "page_type": "about",
+      "sections": [
+        { "section": "hero-page", "zone": "above-fold", "patterns": ["hero-tentang"] },
+        { "section": "tentang-teks-gambar", "zone": "body", "patterns": ["tentang-teks-gambar"] },
+        { "section": "nilai-tiga-kolom", "zone": "body", "patterns": ["nilai-tiga-kolom"] },
+        { "section": "cta-kontak", "zone": "closing", "patterns": ["cta-kontak"] }
+      ]
+    },
+    {
+      "slug": "layanan",
+      "title": "Layanan",
+      "page_type": "services",
+      "sections": [
+        { "section": "hero-page", "zone": "above-fold", "patterns": ["hero-layanan"] },
+        { "section": "layanan-grid", "zone": "body", "patterns": ["layanan-grid"] },
+        { "section": "faq-singkat", "zone": "body", "patterns": ["faq-singkat"] },
+        { "section": "cta-kontak", "zone": "closing", "patterns": ["cta-kontak"] }
+      ]
+    },
+    {
+      "slug": "kontak",
+      "title": "Kontak",
+      "page_type": "contact",
+      "sections": [
+        { "section": "hero-page", "zone": "above-fold", "patterns": ["hero-kontak"] },
+        { "section": "kontak-info", "zone": "body", "patterns": ["kontak-info"] },
+        { "section": "cta-whatsapp", "zone": "closing", "patterns": ["cta-whatsapp"] }
+      ]
+    }
+  ],
+  "menu": {
+    "name": "Menu Utama",
+    "attach": "header",
+    "items": ["beranda", "tentang-kami", "layanan", "kontak"]
+  }
+}
